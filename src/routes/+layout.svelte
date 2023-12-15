@@ -1,17 +1,22 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
+	import InstagramLogo from '../components/InstagramLogo.svelte';
+	import GithubLogo from '../components/GithubLogo.svelte';
+	import LinkedinLogo from '../components/LinkedinLogo.svelte';
 </script>
 
 <div class="app">
 	<Header />
 
-	<main>
+	<main class="relative">
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<footer class="flex gap-8 h-20 p-[10px] items-center justify-center">
+		<InstagramLogo />
+		<GithubLogo />
+		<LinkedinLogo />
 	</footer>
 </div>
 
@@ -29,20 +34,8 @@
 		padding: 1rem;
 		width: 100%;
 		max-width: 64rem;
-		margin: 0 auto;
+		margin: 0 50px;
 		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
 	}
 
 	@media (min-width: 480px) {

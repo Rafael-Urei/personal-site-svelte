@@ -6,7 +6,19 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section></section>
+<section class="absolute top-1/2 -translate-y-1/2 flex flex-col items-start gap-[22px]">
+	<h2 class="self-center text-2xl font-bold text-slate-400 tracking-widest">HELLO!</h2>
+	<h1 class="text-[54px] font-bold text-slate-600 tracking-widest">
+		I'm <span class="text-[#646CFF] tracking-widest">Rafael</span> de Souza!
+	</h1>
+	<p class="text-xs font-bold text-slate-600 tracking-widest leading-6">
+		This is <span class="text-[#646CFF] tracking-widest">Rafael de Souza Silva</span>, He is a Web
+		Developer, currently a Front-end Developer at
+		<a href="https://www.atendo.com/" target="_blank" class="text-[#2563EB]">ATENDO</a>, also he is
+		a Padawan about to become <span class="text-[#30C575]">Jedi</span> or a
+		<span class="text-[#C53054]">Sith</span>.
+	</p>
+</section>
 
 <style>
 </style>
