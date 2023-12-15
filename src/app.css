@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --color-text-base: #475569
+    --color-text-light: #94A3B8
+    --color-text-highlight: #646CFF
+    --color-atendo: #2563EB
+    --color-jedi: #30C575
+    --color-sith: #C53054
+}
+  
+  
