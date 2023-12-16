@@ -6,7 +6,9 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="absolute top-1/2 -translate-y-1/2 flex flex-col items-start gap-[22px]">
+<section
+	class="absolute top-1/2 -translate-y-1/2 left-0 flex flex-col items-start gap-[22px] max-w-3xl duration-300 animate-slideside"
+>
 	<h2 class="self-center text-2xl font-bold text-slate-400 tracking-widest">HELLO!</h2>
 	<h1 class="text-[54px] font-bold text-slate-600 tracking-widest">
 		I'm <span class="text-[#646CFF] tracking-widest">Rafael</span> de Souza!

@@ -4,12 +4,13 @@
 	import InstagramLogo from '../components/InstagramLogo.svelte';
 	import GithubLogo from '../components/GithubLogo.svelte';
 	import LinkedinLogo from '../components/LinkedinLogo.svelte';
+	export let data;
 </script>
 
 <div class="app">
-	<Header />
+	<Header pathname={data.pathname} />
 
-	<main class="relative">
+	<main>
 		<slot />
 	</main>
 
@@ -28,6 +29,7 @@
 	}
 
 	main {
+		position: relative;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
