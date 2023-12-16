@@ -7,11 +7,11 @@
 </svelte:head>
 
 <section
-	class="absolute top-1/2 -translate-y-1/2 left-0 flex flex-col items-start gap-[22px] max-w-3xl duration-300 animate-slideside"
+	class="absolute top-1/2 -translate-y-1/2 left-[50px] flex flex-col items-start gap-[22px] max-w-3xl duration-300 animate-slideside"
 >
 	<h2 class="self-center text-2xl font-bold text-slate-400 tracking-widest">HELLO!</h2>
 	<h1 class="text-[54px] font-bold text-slate-600 tracking-widest">
-		I'm <span class="text-[#646CFF] tracking-widest">Rafael</span> de Souza!
+		I'm <span class="text-[#646CFF] tracking-widest animate-pulse">Rafael</span> de Souza!
 	</h1>
 	<p class="text-xs font-bold text-slate-600 tracking-widest leading-6">
 		This is <span class="text-[#646CFF] tracking-widest">Rafael de Souza Silva</span>, He is a Web

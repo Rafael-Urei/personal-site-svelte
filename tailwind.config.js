@@ -18,7 +18,7 @@ export default {
             opacity: 0
           },
           '100%': {
-            left: '0',
+            left: '50px',
             opacity: 1
           }
         },

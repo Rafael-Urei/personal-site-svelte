@@ -35,8 +35,6 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 50px;
 		box-sizing: border-box;
 	}
 
