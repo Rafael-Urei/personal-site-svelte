@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+	import { setContext } from 'svelte';
+	import { writable } from 'svelte/store';
 	import Header from './Header.svelte';
 	import '../app.css';
 	import InstagramLogo from '../components/InstagramLogo.svelte';
@@ -7,8 +9,11 @@
 	import BackTopButton from '../components/BackTopButton.svelte'
 	import { browser } from '$app/environment';
 	export let data;
-
+	
 	let initialState = false;
+
+	let menu = writable<boolean>(false);
+	setContext('menu', menu);
 
 	if (browser) {
 		window.onscroll = () => {
