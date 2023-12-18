@@ -9,7 +9,7 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section class="fixed text-slate-600">
+<section class="fixed left-[200px] text-slate-600">
 	<h2>Work Experience</h2>
 	<ul class="px-10 text-slate-400">
 		{#each experiences as {title}, i }
