@@ -1,7 +1,7 @@
 import { dev } from '$app/environment';
 
 export async function load({fetch}) {
-    const res = await fetch(`https://gist.githubusercontent.com/Rafael-Urei/94b6c4de4a94e10d2696ff3d4f438a2c/raw/50d6aac1ed5d31016dd40ae09d3c31faf6ba5e3a/projects.json`)
+    const res = await fetch(`https://gist.githubusercontent.com/Rafael-Urei/94b6c4de4a94e10d2696ff3d4f438a2c/raw/aa525112453fe80553caf39e1194aef8922419ed/projects.json`)
     const projects = await res.json();
 
     return {

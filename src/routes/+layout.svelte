@@ -8,6 +8,8 @@
 	import LinkedinLogo from '../components/LinkedinLogo.svelte';
 	import BackTopButton from '../components/BackTopButton.svelte'
 	import { browser } from '$app/environment';
+	import Transition from '../components/Transition.svelte';
+
 	export let data;
 	
 	let initialState = false;
@@ -28,7 +30,9 @@
 	<Header pathname={data.pathname} />
 
 	<main>
-		<slot />
+		<Transition key={data.pathname}>
+			<slot/>
+		</Transition>
 		{#if (initialState)}
 			<BackTopButton/>
 		{/if}
