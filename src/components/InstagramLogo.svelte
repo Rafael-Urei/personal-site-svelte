@@ -1,5 +1,5 @@
 <button class="relative duration-300 animate-[slidesidefast_0.5s_ease-in-out]">
-	<a href="/">
+	<a href="https://www.instagram.com/rafaelss.exe/" target="_blank">
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="Instagram">
 				<path

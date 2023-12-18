@@ -13,6 +13,7 @@
 </script>
 
 <div
+	id={`${title}`}
 	class="relative flex flex-col justify-between p-5 gap-8 items-center h-96 w-72 shadow-md rounded-md"
 >
 	<img src={image} alt="" class="absolute -top-8 rounded-full h-20 w-20 bg-indigo-500 p-1" />
