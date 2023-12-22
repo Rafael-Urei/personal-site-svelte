@@ -3,15 +3,15 @@
 	import { writable } from 'svelte/store';
 	import Header from './Header.svelte';
 	import '../app.css';
-	import InstagramLogo from '../components/InstagramLogo.svelte';
-	import GithubLogo from '../components/GithubLogo.svelte';
-	import LinkedinLogo from '../components/LinkedinLogo.svelte';
-	import BackTopButton from '../components/BackTopButton.svelte'
+	import InstagramLogo from '../components/logos/InstagramLogo.svelte';
+	import GithubLogo from '../components/logos/GithubLogo.svelte';
+	import LinkedinLogo from '../components/logos/LinkedinLogo.svelte';
+	import BackTopButton from '../components/BackTopButton.svelte';
 	import { browser } from '$app/environment';
 	import Transition from '../components/Transition.svelte';
 
 	export let data;
-	
+
 	let initialState = false;
 
 	let menu = writable<boolean>(false);
@@ -19,11 +19,10 @@
 
 	if (browser) {
 		window.onscroll = () => {
-			if (window.scrollY > 20) return initialState = true;
-			return initialState = false;
-		}
-}
-
+			if (window.scrollY > 20) return (initialState = true);
+			return (initialState = false);
+		};
+	}
 </script>
 
 <div class="app">
@@ -31,10 +30,10 @@
 
 	<main>
 		<Transition key={data.pathname}>
-			<slot/>
+			<slot />
 		</Transition>
-		{#if (initialState)}
-			<BackTopButton/>
+		{#if initialState}
+			<BackTopButton />
 		{/if}
 	</main>
 
