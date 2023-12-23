@@ -1,4 +1,5 @@
 <script>
+	import DraggableComponent from '../components/DraggableComponent.svelte';
 </script>
 
 <svelte:head>
@@ -7,7 +8,7 @@
 </svelte:head>
 
 <section
-	class="md:fixed md:top-1/2 md:-translate-y-1/2 md:left-[50px] flex flex-col items-start gap-[22px] max-w-3xl duration-300 animate-slideside"
+	class="z-10 md:fixed md:top-1/2 md:-translate-y-1/2 md:left-[50px] flex flex-col items-start gap-[22px] max-w-3xl duration-300 animate-slideside"
 >
 	<h2 class="self-center text-2xl font-bold text-slate-400 tracking-widest">HELLO!</h2>
 	<h1 class="text-[24px] md:text-[54px] font-bold text-slate-600 tracking-widest">
@@ -21,6 +22,8 @@
 		<span class="text-[#C53054]">Sith</span>.
 	</p>
 </section>
+
+<DraggableComponent />
 
 <style>
 </style>
