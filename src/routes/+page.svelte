@@ -1,4 +1,5 @@
 <script>
+	import App from '../components/3D/App.svelte';
 </script>
 
 <svelte:head>
@@ -21,6 +22,7 @@
 		<span class="text-[#C53054]">Sith</span>.
 	</p>
 </section>
+<App />
 
 <style>
 </style>
