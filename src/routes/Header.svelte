@@ -9,12 +9,16 @@
 </script>
 
 <header class="relative top-0 duration-300 animate-slidedown">
-	<MenuButton/>
-	<div class={$menu ? 'fixed w-[300px] h-screen bg-white duration-300 z-10 shadow-md overflow-hidden' : 'fixed w-0 h-screen duration-300 z-10 shadow-md overflow-hidden'}>
-		<NavList {pathname}/>
+	<MenuButton />
+	<div
+		class={$menu
+			? 'fixed w-[300px] h-screen bg-white duration-300 z-10 pt-10 shadow-md overflow-hidden'
+			: 'fixed w-0 h-screen duration-300 z-10 shadow-md overflow-hidden'}
+	>
+		<NavList {pathname} />
 	</div>
-	
+
 	<nav class="hidden md:block">
-		<NavList {pathname}/>
+		<NavList {pathname} />
 	</nav>
 </header>
