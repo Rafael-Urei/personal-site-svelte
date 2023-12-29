@@ -1,8 +1,9 @@
 import { dev } from '$app/environment';
 
 export async function load({ fetch }) {
-	const API_ENDPOINT = import.meta.env.VITE_PRIVATE_API_URL;
-	const res = await fetch(API_ENDPOINT);
+	const res = await fetch(
+		'https://gist.githubusercontent.com/Rafael-Urei/94b6c4de4a94e10d2696ff3d4f438a2c/raw/d12139d3f79d5b7184a96a00cb12ae8304f9b32d/projects.json'
+	);
 	const projects = await res.json();
 
 	const sortedProjects = projects.sort((a, b) => {
