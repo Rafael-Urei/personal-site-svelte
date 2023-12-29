@@ -3,6 +3,11 @@
 	import GmailLogo from '../../components/logos/GmailLogo.svelte';
 </script>
 
+<svelte:head>
+	<title>Contact</title>
+	<meta name="description" content="Contact Page" />
+</svelte:head>
+
 <section>
 	<div class="flex flex-col items-center gap-2">
 		<h1>Contact me:</h1>
